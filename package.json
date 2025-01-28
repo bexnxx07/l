@@ -11,5 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "ws": "^*"
-   }
+   },
+  "engines": {
+    "node": "22.x"
+  }
 }
