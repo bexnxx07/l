@@ -420,5 +420,3 @@ if (parsedTarget.protocol === 'http:') {
     setInterval(h2flood);
 }
 }
-process.on('uncaughtException', error => {});
-process.on('unhandledRejection', error => {});
